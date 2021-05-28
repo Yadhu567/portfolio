@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+  <body>
+   <!-- navbar -->
+   <nav class=" navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#hero">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#skills">my skills</a>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#works">myworks</a>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="contact">content me</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container">
+  <section id="hero" class="d-flex justify-content-sm-center justify-content-evenly allign- items-sm-center flex-column-reverse gap-3 flex-md-row">
+  <!-- Hero -->
+  <div class="d-flex justify-content-sm-center allign- items-sm-center flex-content-md-start allign-items-md-start">
+     <h5>Hi</h5>
+     <h1>Iam Yadhu Krishnan</h1>
+     <p>A full stack web developer</p>
+     <button class="btn btn-primary btn-sm">my cool resume🙂</button>
+  </div>
+  <div class="d-md-none w-50 w-50">
+    <img
+    src=https://www.google.com/search?q=men+image&client=ms-android-oppo&biw=360&bih=692&prmd=inv&sxsrf=ALeKk02u3RU0zcK6T-ScWhrC5NM7PUDAjw%3A1622039238070&source=lnms&sa=X&ved=1t%3A46160&no_sw_cr=1#imgrc=03Cxgl4HJswbOM alt="Yadhu Krishnan" class="w-100 h-100 rounded-circle shadow">
+  </div>
+  </div>
+  </section>
+  <section id="skills" class="mt-5 p-4">
+  <!-- my skills -->
+  <h1 class="text-primary text-center">my skill set</h1>
+  <div class="mt-4 d-md-none justify-content-evenly">
+   <i class="fab-fa-html5 fa-3x"></i>
+   <i class="fab-fa-css3-alt fa-3x"></i>
+   <i class="fab-fa-bootstrap fa-3x"></i>
+  </div>                       <div class="mt-4 d-none d-md-flex justify-content-evenly">
+   <i class="fab-fa-html5 fa-7x"></i>
+   <i class="fab-fa-css3-alt fa-7x"></i>
+   <i class="fab-fa-bootstrap fa-7x"></i>
+  </div>
+  </section>
+  <section id="works" class="mt-4 p-4" >
+  <!-- my work -->
+  <h1 class="text-primary text-center">my works</h1>
+  <div class="row">
+   <div class="col-sm col-md-4">
+  <div class="card mb-2">
+  <img src="https://www.google.com/search?q=html+coding+photo+in+laptop&client=ms-android-oppo&prmd=ivn&sxsrf=ALeKk02XJLDn2UbGHkhBEU_SCmcMdO3-_A:1622111191150&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKhNaK0-nwAhW7xIsBHXJzBwMQ_AUoAXoECAIQAQ&biw=360&bih=692#imgrc=UfZrNf5FT0qKzM" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">portfolio website</h5>
+    <p class="card-text">Built an amazing website with bootstrap.</p>
+    <a href="#" class="btn btn-dark">view source</a>
+  </div>
+  </div>
+  <div class="card mt-3 mb-2">
+  <img src="https://www.google.com/search?q=html+coding+photo+in+laptop&client=ms-android-oppo&prmd=ivn&sxsrf=ALeKk02XJLDn2UbGHkhBEU_SCmcMdO3-_A:1622111191150&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKhNaK0-nwAhW7xIsBHXJzBwMQ_AUoAXoECAIQAQ&biw=360&bih=692#imgrc=UfZrNf5FT0qKzM" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">portfolio website</h5>
+    <p class="card-text">Built an amazing website with bootstrap.</p>
+    <a href="#" class="btn btn-dark">view source</a>
+  </div>
+  </div>
+  </div>
+  </div>
+ </section>
+ <section id="contact"class="mt-4 py-4">
+  <!-- contact me -->
+  <h1 class="text-primary text-center">contact form</h1>
+    <div class="raw">
+    <div class="clo-sm col-md-8">
+   <form>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" required place holder="enter your amazing message"! rows="3"></textarea>
+</div>
+  <button type="submit" class="btn btn-primary">
+   submit
+  </button>
+  </form>
+  </div>
+  <div class="cocol-sm col-md-4">
+  <div class="mt3">
+   <h4><i class="fas fa-at text-primary"></i>yadhukrishnan123@gmail.com</h4>
+   <button type="submit" class="btn btn-link">
+   <a href="https//:github/pavankpdev/"><i class="fab fa-github"></i></a>
+   </button>
+  </div>
+  </div>
+ </section>
+</main>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
