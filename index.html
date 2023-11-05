@@ -1,114 +1,147 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  </head>
-  <body>
-   <!-- navbar -->
-   <nav class=" navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#hero">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="#skills">my skills</a>
-        </li>
-       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#works">myworks</a>
-        </li>
-       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="contact">content me</a>
-      </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f8f8f8;
+    }
+    
+    header {
+      background-color: #88743d;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      border-bottom: 2px solid #fff; /* Add a border at the bottom */
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #555;
+      padding: 1em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 0.25em;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s; /* Add color transition */
+    }
+    
+    nav a:hover {
+      background-color: #af704c;
+      color: #fff;
+    }
+    
+    section {
+      padding: 2em;
+      background-color: #fff;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow at the top */
+    }
+    
+    #profile-pic img {
+      border-radius: 50%;
+      max-width: 150px;
+      height: auto;
+      border: 4px solid #af904c; /* Add a border around the profile picture */
+    }
+    
+    h2, h3 {
+      color: #c98a16; /* Use a consistent accent color for headings */
+    }
+    
+    .project {
+      margin-top: 40px; /* Increase the margin-top for projects */
+    }
+    
+    .project p {
+      color: #777;
+    }
+    
+    /* Add a responsive design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.25em 0;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yadhukrishnan PK</h1>
+    <p>Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skillset">Skill Set</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="profile-pic">
+    <img src="profile.jpeg" alt="Yadhukrishnan PK">
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am technology enthusiastic about contributing my skills and knowledge to a dynamic work environment where I can further develop as a professional and make meaningful contributions to innovative projects.</p>
+  </section>
+
+  <section id="skillset">
+    <h2>Skill Set</h2>
+    <ul>
+      <li>C</li>
+      <li>Python</li>
+      <li>HTML</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="project">
+    <h2>Projects</h2>
+    <div>
+      <h3>Railway Track Animal Detection System</h3>
+      <p>This project aims to develop a system for detecting animals on railway tracks to enhance safety and prevent accidents.</p>
     </div>
-  </div>
-</nav>
-<main class="container">
-  <section id="hero" class="d-flex justify-content-sm-center justify-content-evenly allign- items-sm-center flex-column-reverse gap-3 flex-md-row">
-  <!-- Hero -->
-  <div class="d-flex justify-content-sm-center allign- items-sm-center flex-content-md-start allign-items-md-start">
-     <h1>Hi</h1>
-     <h1>Iam Yadhu Krishnan</h1>
-     <p>A full stack web developer</p>
-     <button class="btn btn-primary btn-sm">my cool resume🙂</button>
-  </div>
-  <div class="d-md-none w-50 w-50">
-    <img
-    src=https://www.google.com/search?q=men+image&client=ms-android-oppo&biw=360&bih=692&prmd=inv&sxsrf=ALeKk02u3RU0zcK6T-ScWhrC5NM7PUDAjw%3A1622039238070&source=lnms&sa=X&ved=1t%3A46160&no_sw_cr=1#imgrc=03Cxgl4HJswbOM alt="Yadhu Krishnan" class="w-100 h-100 rounded-circle shadow">
-  </div>
-  </div>
   </section>
-  <section id="skills" class="mt-5 p-4">
-  <!-- my skills -->
-  <h1 class="text-primary text-center">my skill set</h1>
-  <div class="mt-4 d-md-none justify-content-evenly">
-   <i class="fab-fa-html5 fa-3x"></i>
-   <i class="fab-fa-css3-alt fa-3x"></i>
-   <i class="fab-fa-bootstrap fa-3x"></i>
-  </div>                       <div class="mt-4 d-none d-md-flex justify-content-evenly">
-   <i class="fab-fa-html5 fa-7x"></i>
-   <i class="fab-fa-css3-alt fa-7x"></i>
-   <i class="fab-fa-bootstrap fa-7x"></i>
-  </div>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yadhukrishnanrma@gmail.com</p>
+    <p>Mob No: 7994287975</p>
   </section>
-  <section id="works" class="mt-4 p-4" >
-  <!-- my work -->
-  <h1 class="text-primary text-center">my works</h1>
-  <div class="row">
-   <div class="col-sm col-md-4">
-  <div class="card mb-2">
-  <img src="https://www.google.com/search?q=html+coding+photo+in+laptop&client=ms-android-oppo&prmd=ivn&sxsrf=ALeKk02XJLDn2UbGHkhBEU_SCmcMdO3-_A:1622111191150&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKhNaK0-nwAhW7xIsBHXJzBwMQ_AUoAXoECAIQAQ&biw=360&bih=692#imgrc=UfZrNf5FT0qKzM" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">portfolio website</h5>
-    <p class="card-text">Built an amazing website with bootstrap.</p>
-    <a href="#" class="btn btn-dark">view source</a>
-  </div>
-  </div>
-  <div class="card mt-3 mb-2">
-  <img src="https://www.google.com/search?q=html+coding+photo+in+laptop&client=ms-android-oppo&prmd=ivn&sxsrf=ALeKk02XJLDn2UbGHkhBEU_SCmcMdO3-_A:1622111191150&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKhNaK0-nwAhW7xIsBHXJzBwMQ_AUoAXoECAIQAQ&biw=360&bih=692#imgrc=UfZrNf5FT0qKzM" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">portfolio website</h5>
-    <p class="card-text">Built an amazing website with bootstrap.</p>
-    <a href="#" class="btn btn-dark">view source</a>
-  </div>
-  </div>
-  </div>
-  </div>
- </section>
- <section id="contact"class="mt-4 py-4">
-  <!-- contact me -->
-  <h1 class="text-primary text-center">contact form</h1>
-    <div class="raw">
-    <div class="clo-sm col-md-8">
-   <form>
-    <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" required place holder="enter your amazing message"! rows="3"></textarea>
-</div>
-  <button type="submit" class="btn btn-primary">
-   submit
-  </button>
-  </form>
-  </div>
-  <div class="cocol-sm col-md-4">
-  <div class="mt3">
-   <h4><i class="fas fa-at text-primary"></i>yadhukrishnan123@gmail.com</h4>
-   <button type="submit" class="btn btn-link">
-   <a href="https//:github/pavankpdev/"><i class="fab fa-github"></i></a>
-   </button>
-  </div>
-  </div>
- </section>
-</main>  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  </body>
+
+  <footer>
+    &copy; 2023 Portfolio. All rights reserved.
+  </footer>
+
+</body>
 </html>
