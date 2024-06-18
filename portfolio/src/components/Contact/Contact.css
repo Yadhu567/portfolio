@@ -1,0 +1,50 @@
+.contact-form {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+    padding-top: 3rem;
+}
+
+.c-left {
+    text-align: center !important;
+    padding-top: 25px;
+    color: white !important;
+}
+
+.c-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    align-items: center; /* Centering content vertically */
+}
+
+.contact-info {
+    text-align: center; /* Centering text horizontally */
+    color: white;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #ffc107; /* Assuming 'yellow' corresponds to this color */
+}
+
+.contact-info p {
+    margin: 0 0 20px;
+    font-size: 19px;
+}
+
+/* Media query adjustments */
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+}
